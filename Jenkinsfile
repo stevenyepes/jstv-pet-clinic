@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'maven:3.6.3-openjdk-11'
+      image 'arm64v8/maven:3.6.3-openjdk-11'
       args '--network jenkins-blue-ocean-pet-clinic'
     }
 
